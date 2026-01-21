@@ -146,6 +146,7 @@ if __name__ == "__main__":
     generated_pairs = []
     generated_pairs1 = []
     msg = ""
+    msg1 = ""
     
     if args.get("evaluate_no_change"):
         generated_pairs1 = generate_random_list_door_pairs(max)
