@@ -16,7 +16,7 @@ You can install the dependencies with the `requirements.txt` file:
 $ pip install -r requirements.txt
 ```
 
-Or, you cand do it manyally by installing **pandas** and **matplotlib**, as in:
+Or, you cand do it manyally by installing **matplotlib**, as in:
 
 ```bash
 $ pip install --upgrade matplotlib
