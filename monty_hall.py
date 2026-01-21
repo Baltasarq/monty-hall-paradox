@@ -55,7 +55,7 @@ def create_selection_changed(num_doors=3):
     available_doors = set(doors)
     available_doors.discard(chosen_door)
     available_doors.discard(revealed_door)
-    chosen_door2 = available_doors.pop()
+    chosen_door2 = rnd.choice(list(available_doors))
     
     return tuple([treasure_door, chosen_door2])
 ...
