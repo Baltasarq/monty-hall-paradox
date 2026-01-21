@@ -29,3 +29,11 @@ Just execute the *py* program:
 ```bash
 $ python monty_hall.py
 ```
+
+This will show all the available options:
+- help: will show the same information as invoked without arguments.
+- verbose: will show a textual table with 10 maximum elements.
+- enoc, or evaluate-no-change: shows a graph with data evaluated over 100000 elements.
+- ec, or evaluate-change: shows a graph with data evaluated over 100000 elements, the initial choice is changed.
+
+The last two can be given at the same time, and in that case their results are compared.
