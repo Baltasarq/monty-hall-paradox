@@ -10,7 +10,13 @@ The simulation conterunituitively demonstrates that you get an extra third of pr
 
 You need **Python** tu run the simulation.
 
-You need to install **pandas** and **matplotlib**, as in:
+You can install the dependencies with the `requirements.txt` file:
+
+```bash
+$ pip install -r requirements.txt
+```
+
+Or, you cand do it manyally by installing **pandas** and **matplotlib**, as in:
 
 ```bash
 $ pip install --upgrade pandas matplotlib
