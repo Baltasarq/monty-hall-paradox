@@ -4,7 +4,7 @@ A simulation illustrating the [Monty Hall paradox](https://en.wikipedia.org/wiki
 
 ![Simulation results](docs/paradox_result.png)
 
-The simulation conterunituitively demonstrates that you get an extra third of probabilities of getting the prize by changing your initial choice.
+The simulation counterintuitively demonstrates that you get an extra third of probabilities of getting the prize by changing your initial choice.
 
 ## Installing
 
