@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 Or, you cand do it manyally by installing **pandas** and **matplotlib**, as in:
 
 ```bash
-$ pip install --upgrade pandas matplotlib
+$ pip install --upgrade matplotlib
 ```
 
 ## Execution
