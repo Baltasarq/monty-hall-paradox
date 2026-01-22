@@ -77,10 +77,11 @@ def generate_random_list_door_pairs_after_change(max, num_doors=3):
 ...
 
 
-def print_to(f, l_pairs):
+def print_to(f, l_pairs, num_correct):
     """Textually shows the pairs (prize, chosen) generated.
         :param f: the file to dump the text to.
         :l_pairs: a list of pairs.
+        :param num_correct: the number of correct cases.
     """
     print("0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1", file=f)
     print("1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0", file=f)
@@ -94,7 +95,6 @@ def print_to(f, l_pairs):
                                 [pair[1] for pair in l_pairs]]),
             file=f)
     print("-------------------------------------", file=f)
-    num_correct = len(extract_coincidences(l_pairs))
     total = len(l_pairs)
     percentage = (num_correct / total) * 100
     print(f"Correct: {num_correct}/{total} ({percentage:5.2f}%)\n", file=f)
@@ -172,8 +172,8 @@ if __name__ == "__main__":
         percentage2 = (num_correct2 / max) * 100
         
         if max < 40:
-            print_to(sys.stdout, generated_pairs1)
-            print_to(sys.stdout, generated_pairs)
+            print_to(sys.stdout, generated_pairs1, num_correct1)
+            print_to(sys.stdout, generated_pairs, num_correct2)
         ...
         
         show_graph([percentage1, percentage2],
@@ -185,7 +185,7 @@ if __name__ == "__main__":
         percentage = (num_correct / max) * 100
         
         if max < 40:
-            print_to(sys.stdout, generated_pairs)
+            print_to(sys.stdout, generated_pairs, num_correct)
         ...
         
         show_graph(percentage,
